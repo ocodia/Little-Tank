@@ -1,0 +1,46 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=320, height=650, user-scalable=no, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <title>Little Tank</title>
+  <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' />
+
+
+<style type="text/css">
+
+body { background: #000; margin: 20px 0 0 0; padding: 0; }
+#littleTank { display: block; width: 320px; height: 650px; margin: 0 auto; background: #000; position: relative; }
+#littleTank canvas { display: block; background: #333; border: 1px solid #333; }
+#littleTank .controls { position: absolute; bottom: 5px; left: 0; }
+#littleTank .controls a { display: inline-block; background: #444; color: #fff; width: 150px; margin: 0 0 0 5px; height: 40px; line-height: 100%; font-size: 40px; text-align: center; text-decoration: none; border-radius: 5px; }
+#littleTank .controls a:active { background: #ff1493; }
+#controls{
+	width: 300px;
+	margin: 0 auto;
+	padding: 0px;
+	font-family: arial, helvetica, sans-serif;
+	color: #fff;
+}
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+
+</style>
+
+</head>
+<body>
+<div id="littleTank">
+  <canvas id="littleTankCanvas"></canvas>
+</div>
+<div id="controls">
+<strong>LITTLE TANK</strong><br/>
+<strong>Controls: </strong>arrow keys left + right to move tank, space bar to fire.
+</div>
+<script type="text/javascript" src="littleTank.js"> </script>
+
+</body>
+</html>
